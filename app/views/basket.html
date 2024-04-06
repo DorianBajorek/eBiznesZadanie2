@@ -1,0 +1,17 @@
+@(products: Seq[models.Product])
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Basket</title>
+</head>
+<body>
+    <h1>Products</h1>
+    <ul>
+        @for(product <- products) {
+            <li>@product.name - Price: @product.price</li>
+        }
+    </ul>
+</body>
+</html>
